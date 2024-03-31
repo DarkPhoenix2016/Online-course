@@ -1,0 +1,31 @@
+
+:root {
+    --primary: #22092C;
+    --secondary: #872341;
+    --trinary: #BE3144;
+    --accent: #F05941;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+nav{
+    background-color: var(--secondary);
+}
+.navbar-brand>img{
+    vertical-align: top;
+}
+.navbar-nav .dropdown-menu.show {
+    left: -7rem;
+}
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.banner-image {
+    background-image: url('/assets/site/images/banner_image.png');
+    background-size: contain;
+    background-repeat:no-repeat;
+    height: 100%;
+}

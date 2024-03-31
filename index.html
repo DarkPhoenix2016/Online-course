@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My LMS</title>
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="/assets/site/images/logo.png" height="30" alt="Phoenix Education Logo" loading="lazy" />
+                Phoenix Education
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                <ul class="navbar-nav ">
+                    <li class="nav-item ">
+                        <a class="nav-link text-white" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">My profile</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- /Navbar -->
+    <!-- Banner -->
+    <div class="container mb-5">
+        <div class="row my-5">
+            <!-- Image column -->
+            <div class="col-lg-6 order-lg-last ">
+                <img src="/assets/site/images/banner_image.png" class="w-75 mx-4 my-4 d-block" alt="">
+            </div>
+            <!-- Text column -->
+            <div class="col-lg-6 order-lg-first">
+                <div class="banner py-5 position-relative">
+                    <h1 class="display-4">Welcome to Phoenix Education</h1>
+                    <p class="lead">Learn, explore, and grow with our online courses.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button class="btn btn-primary me-md-2 btn-lg" type="button">Sign Up</button>
+                        <button class="btn btn-outline-secondary btn-lg" type="button">Login</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- /Banner -->
+    
+    <!-- Featured Courses -->
+    <div class="container py-5">
+        <h2 class="text-center mb-4">Featured Courses</h2>
+    
+        <div id="carouselFeaturedCourses" class="row owl-carousel owl-theme">
+            <div class="item">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Course Image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Introduction to Python Programming</h5>
+                        <p class="card-text">Learn the fundamentals of Python programming language with hands-on exercises and real-world examples.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="item">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Course Image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development with HTML, CSS, and JavaScript</h5>
+                        <p class="card-text">Master the essentials of web development by learning HTML, CSS, and JavaScript with practical examples.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="item">
+                <div class="card h-100">
+                    <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Course Image" />
+                    <div class="card-body">
+                        <h5 class="card-title">Machine Learning Fundamentals</h5>
+                        <p class="card-text">Discover the basics of machine learning and its applications in various industries using Python and popular libraries like TensorFlow.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    chine learning and its applications in various industries using Python and popular libraries like TensorFlow.</p>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- /Featured Courses -->
+
+    
+    <!--bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--owl carousel JavaScript -->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#carouselFeaturedCourses").owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:2
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            });
+        });
+    </script>
+    <!--custom JavaScript (theme switcher) 
+    <script src="theme-switcher.js"></script>-->
+</body>
+</html>
